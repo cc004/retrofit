@@ -22,6 +22,8 @@ def generate(filename, flags, dict):
     #exit(0)
     os.remove(f'{filename}.cpp')
 
+# param comment
+
 def gen(ecp, pattern):
     '''
     generate(f'enhanced_ilf_pattern{pattern["_id"]}_ecp{ecp}', ['ilf', 'start_gap', f'ecp{ecp}'], {

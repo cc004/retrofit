@@ -753,6 +753,7 @@ int64_t emulate(float** endurance_t, dataset data)
         }
 #endif
 
+// For Counter CW, whenever one row reach the swap interval, cols are swapped in groups (8 bits per group usually).
 #ifdef counter_cw
         if (++col_counter[p.row] == cfg.col_swap_interval)
         {
